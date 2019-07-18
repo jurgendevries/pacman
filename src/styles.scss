@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body,html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+body {
+    padding-top: 56px;
+    overflow: hidden;
+}
+.nav-item {
+    color: #cfcfcf;
+    .score-item {
+        display: block;
+        width: 30px;
+        line-height: 30px;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        margin: -3px 0 0 20px;
+    }
+    .score-item-blue {
+        background-color: #0066ff;
+    }
+    .score-item-purple {
+        background-color: #c300ff;
+    }
+    .score-item-red {
+        background-color: #ec0000;
+    }
+    .score-item-green {
+        background-color: #69c500;
+    }
+    .score-item-orange {
+        background-color: #ff8800;
+    }
+}

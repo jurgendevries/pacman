@@ -1,0 +1,30 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Pacman Streetwise</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          Total score <span class="score">{{score.total}}</span>
+        </li>
+        <li class="nav-item" *ngIf="score.blue">
+          <span class="score-item score-item-blue">{{score.blue}}</span>
+        </li>
+        <li class="nav-item" *ngIf="score.purple">
+          <span class="score-item score-item-purple">{{score.purple}}</span>
+        </li>
+        <li class="nav-item" *ngIf="score.red">
+          <span class="score-item score-item-red">{{score.red}}</span>
+        </li>
+        <li class="nav-item" *ngIf="score.green">
+          <span class="score-item score-item-green">{{score.green}}</span>
+        </li>
+        <li class="nav-item" *ngIf="score.orange">
+          <span class="score-item score-item-orange">{{score.orange}}</span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<canvas id="canvas" width="1627" height="864"></canvas>
+<div id="map"></div>
